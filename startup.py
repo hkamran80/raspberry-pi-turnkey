@@ -33,7 +33,7 @@ def id_generator(size=6, chars=string.ascii_lowercase + string.digits):
 
 os.chdir('/home/pi/raspberry-pi-turnkey')
 
-wpa_conf = """country=GB
+wpa_conf = """country=US
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 network={
@@ -41,7 +41,7 @@ network={
     psk="_password_"
 }"""
 
-wpa_conf_default = """country=GB
+wpa_conf_default = """country=US
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 """
